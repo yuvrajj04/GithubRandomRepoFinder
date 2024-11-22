@@ -69,6 +69,18 @@ function App() {
               <span className="inline-block bg-green-300 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">🍴 Forks: {repo.forks_count}</span>
               <span className="inline-block bg-red-300 text-red-800 text-sm font-semibold px-3 py-1 rounded-full">🔓 Open Issues: {repo.open_issues_count}</span>
             </div>
+            {/* Repository link */}
+            <p className="mt-4">
+              🔗 Repository Link:{' '}
+              <a
+                href={repo.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline"
+              >
+                {repo.html_url}
+              </a>
+            </p>
 
             {/* Button to refresh the repository */}
             <button 
